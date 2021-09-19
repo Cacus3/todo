@@ -13,10 +13,10 @@
   <ul class="todo-list">
     <li *ngFor="let todo of todo_tasks">
       <div>
-        <div>{{this.todo.title}}</div>
+        <div style="max-width: 39vw;">{{this.todo.title}}</div>
         <div>
-          <button class="btn-floating btn-small waves-effect waves-light green accent-4"><i class="material-icons">check</i></button>
-          <button class="btn-floating btn-small waves-effect waves-light red accent-3"><i class="material-icons">clear</i></button>
+          <button (click)="onComplete(this.todo.id)" class="btn-floating btn-small waves-effect waves-light green accent-4"><i class="material-icons">check</i></button>
+          <button (click)="onDelete(this.todo.id)" class="btn-floating btn-small waves-effect waves-light red accent-3"><i class="material-icons">clear</i></button>
         </div>
       </div>
     </li>
