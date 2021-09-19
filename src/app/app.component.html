@@ -12,11 +12,26 @@
 
   <ul class="todo-list">
     <li *ngFor="let todo of todo_tasks">
-      <div>
+      <div *ngIf="!this.todo.isComplete">
         <div style="max-width: 39vw;">{{this.todo.title}}</div>
         <div>
           <button (click)="onComplete(this.todo.id)" class="btn-floating btn-small waves-effect waves-light green accent-4"><i class="material-icons">check</i></button>
           <button (click)="onDelete(this.todo.id)" class="btn-floating btn-small waves-effect waves-light red accent-3"><i class="material-icons">clear</i></button>
+        </div>
+      </div>
+    </li>
+
+    <br><br>
+
+    <h5 style="font-family: -apple-system, BlinkMacSystemFont;">Completed Tasks</h5>
+
+    <br>
+
+    <li *ngFor="let todo of todo_tasks">
+      <div *ngIf="this.todo.isComplete">
+        <div style="max-width: 39vw;">{{this.todo.title}}</div>
+        <div>
+          <button (click)="onDelete(this.todo.id)" class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">clear</i></button>
         </div>
       </div>
     </li>
