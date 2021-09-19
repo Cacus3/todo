@@ -1,5 +1,15 @@
 <div class="container">
   <h4 style="font-family: -apple-system, BlinkMacSystemFont;">Todo List</h4>
+
+  <form class="todo-form" #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <div>
+      <input type="text" id="title" name="title" ngModel placeholder="What are you going to do?">
+    </div>
+    <div>
+      <button type="submit" class="btn-floating waves-effect waves-light light-blue accent-4"><i class="material-icons">add</i></button>
+    </div>
+  </form>
+
   <ul class="todo-list">
     <li *ngFor="let todo of todo_tasks">
       <div>
