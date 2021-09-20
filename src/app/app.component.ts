@@ -9,6 +9,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'test';
   todo_tasks: Todo[] = [
     new Todo(Guid.create(),'responsive chessboard', true),
     new Todo(Guid.create(),'to-do list app', true),
