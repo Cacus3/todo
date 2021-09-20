@@ -4,7 +4,13 @@ master - branch do którego trafiały stabilne wersje\
 alpha - branch odpowiadający za dev\
 test - branch odpowiadający za unit testy\
 <br>
-Każdy branch został scalony z masterem po osiągnięciu stabilnej wersji, aby uniknąć przeszkoków.
+Każdy branch został scalony z masterem po osiągnięciu stabilnej wersji, aby uniknąć przeskoków.\
+<br>
+Dodatkowe pakiety, które zostały użyte do projektu:\
+material-icon\
+materialize-css\
+material-design-icons\
+guid-typescript
 
 # Todo
 
