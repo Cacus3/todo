@@ -1,3 +1,11 @@
+# Quick Description
+
+master - branch do którego trafiały stabilne wersje
+alpha - branch odpowiadający za dev
+test - branch odpowiadający za unit testy
+
+Każdy branch został scalony z masterem po osiągnięciu stabilnej wersji, aby uniknąć przeszkoków.
+
 # Todo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
